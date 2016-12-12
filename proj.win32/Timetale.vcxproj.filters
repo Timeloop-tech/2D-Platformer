@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Command">
+      <UniqueIdentifier>{335f9f20-0063-436f-876a-bb486bdef5c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameElements">
+      <UniqueIdentifier>{40dd69df-ba87-4bc2-80be-8ba8ed597e39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CommandInfo.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\DelayInfo.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\InteractCommand.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\InteractCommandInfo.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\JumpCommand.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\JumpCommandInfo.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LeftCommand.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LeftCommandInfo.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RightCommand.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RightCommandInfo.cpp">
+      <Filter>src\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Character.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CharacterModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CharacterView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Floor.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FloorModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\FloorView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameElement.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameElementModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\InSpacePortal.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\InSpacePortalModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\InSpacePortalView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Lift.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LiftModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LiftView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MovingPlatform.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MovingPlatformModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MovingPlatformView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\OutSpacePortal.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\OutSpacePortalModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\OutSpacePortalView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PushableBlock.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PushableBlockModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PushableBlockView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PushButton.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PushButtonModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PushButtonView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SlidingDoor.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SlidingDoorModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SlidingDoorView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StepButton.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StepButtonModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StepButtonView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TerminatingDoor.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TerminatingDoorModel.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TerminatingDoorView.cpp">
+      <Filter>src\GameElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CollisionHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLayer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameOverScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GLES-Render.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HUDLayer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\InfoScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LevelParser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainMenuScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\RecordTime.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SelectLevelScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Utils.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Command.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CommandInfo.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\DelayInfo.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InteractCommand.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InteractCommandInfo.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\JumpCommand.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\JumpCommandInfo.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LeftCommand.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LeftCommandInfo.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RightCommand.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RightCommandInfo.h">
+      <Filter>src\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Character.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CharacterModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CharacterStates.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CharacterView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Floor.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FloorModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\FloorView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameElement.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameElementModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameElementView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InSpacePortal.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InSpacePortalModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InSpacePortalView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Lift.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LiftModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LiftView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MovingPlatform.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MovingPlatformModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MovingPlatformView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\OutSpacePortal.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\OutSpacePortalModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\OutSpacePortalView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PushableBlock.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PushableBlockModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PushableBlockView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PushButton.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PushButtonModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PushButtonStates.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PushButtonView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SlidingDoor.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SlidingDoorModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SlidingDoorView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StepButton.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StepButtonModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StepButtonStates.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StepButtonView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TerminatingDoor.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TerminatingDoorModel.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TerminatingDoorView.h">
+      <Filter>src\GameElements</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CollisionHandler.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Events.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameLayer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameOverScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GLES-Render.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HUDLayer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InfoScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelDef.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelManager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\LevelParser.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainMenuScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RecordTime.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SelectLevelScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utils.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\CSB\.DS_Store">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CSB\GameOverLayer.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CSB\HUDLayer.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CSB\InfoLayer.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CSB\MainMenuLayer.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\CSB\SelectLevelLayer.csb">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\images\.DS_Store">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\images\info_layer_tilemap.tmx">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\images\main_menu_tilemap.tmx">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\images\princess_animation.plist">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Levels\1\floor.tmx">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Levels\1\LevelConfig.json">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Levels\2\.DS_Store">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Levels\1\Background.csb">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\images\box.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\door_open.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\go_btnLevel.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\go_btnLevel_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\go_btnMainMenu.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\go_btnMainMenu_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\go_GameOver.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnInteract.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnInteract_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnJump.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnJump_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnLeft.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnLeft_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnRight.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_btnRight_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\hud_DirBG.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\i_btnBack.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\i_btnBack_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\in_portal.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\lift.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\ls_SelectLevel.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\mm_btnInfo.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\mm_btnInfo_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\mm_btnStart.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\mm_btnStart_pressed.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\mm_TimeTaleLogo.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\out_portal.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\princess_animation.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\push_button_off.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\push_button_on.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\sliding_door.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\step_button_off.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\step_button_on.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\TimeloopLogo.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\images\timetale_tilemap_64.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\Levels\1\timetale_tilemap_64.png">
+      <Filter>resource</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

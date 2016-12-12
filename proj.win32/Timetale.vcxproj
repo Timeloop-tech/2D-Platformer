@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2dx.props" />
+    <Import Project="..\cocos2d\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup>
+    <CustomBuildStep>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+      </Command>
+      <Outputs>$(TargetName).cab</Outputs>
+      <Inputs>$(TargetFileName)</Inputs>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(EngineRoot)cocos\audio\include;$(EngineRoot)external;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Character.cpp" />
+    <ClCompile Include="..\Classes\CharacterModel.cpp" />
+    <ClCompile Include="..\Classes\CharacterView.cpp" />
+    <ClCompile Include="..\Classes\CollisionHandler.cpp" />
+    <ClCompile Include="..\Classes\CommandInfo.cpp" />
+    <ClCompile Include="..\Classes\DelayInfo.cpp" />
+    <ClCompile Include="..\Classes\Floor.cpp" />
+    <ClCompile Include="..\Classes\FloorModel.cpp" />
+    <ClCompile Include="..\Classes\FloorView.cpp" />
+    <ClCompile Include="..\Classes\GameElement.cpp" />
+    <ClCompile Include="..\Classes\GameElementModel.cpp" />
+    <ClCompile Include="..\Classes\GameLayer.cpp" />
+    <ClCompile Include="..\Classes\GameOverScene.cpp" />
+    <ClCompile Include="..\Classes\GameScene.cpp" />
+    <ClCompile Include="..\Classes\GLES-Render.cpp" />
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\HUDLayer.cpp" />
+    <ClCompile Include="..\Classes\InfoScene.cpp" />
+    <ClCompile Include="..\Classes\InSpacePortal.cpp" />
+    <ClCompile Include="..\Classes\InSpacePortalModel.cpp" />
+    <ClCompile Include="..\Classes\InSpacePortalView.cpp" />
+    <ClCompile Include="..\Classes\InteractCommand.cpp" />
+    <ClCompile Include="..\Classes\InteractCommandInfo.cpp" />
+    <ClCompile Include="..\Classes\JumpCommand.cpp" />
+    <ClCompile Include="..\Classes\JumpCommandInfo.cpp" />
+    <ClCompile Include="..\Classes\LeftCommand.cpp" />
+    <ClCompile Include="..\Classes\LeftCommandInfo.cpp" />
+    <ClCompile Include="..\Classes\LevelManager.cpp" />
+    <ClCompile Include="..\Classes\LevelParser.cpp" />
+    <ClCompile Include="..\Classes\Lift.cpp" />
+    <ClCompile Include="..\Classes\LiftModel.cpp" />
+    <ClCompile Include="..\Classes\LiftView.cpp" />
+    <ClCompile Include="..\Classes\MainMenuScene.cpp" />
+    <ClCompile Include="..\Classes\MovingPlatform.cpp" />
+    <ClCompile Include="..\Classes\MovingPlatformModel.cpp" />
+    <ClCompile Include="..\Classes\MovingPlatformView.cpp" />
+    <ClCompile Include="..\Classes\OutSpacePortal.cpp" />
+    <ClCompile Include="..\Classes\OutSpacePortalModel.cpp" />
+    <ClCompile Include="..\Classes\OutSpacePortalView.cpp" />
+    <ClCompile Include="..\Classes\PushableBlock.cpp" />
+    <ClCompile Include="..\Classes\PushableBlockModel.cpp" />
+    <ClCompile Include="..\Classes\PushableBlockView.cpp" />
+    <ClCompile Include="..\Classes\PushButton.cpp" />
+    <ClCompile Include="..\Classes\PushButtonModel.cpp" />
+    <ClCompile Include="..\Classes\PushButtonView.cpp" />
+    <ClCompile Include="..\Classes\RecordTime.cpp" />
+    <ClCompile Include="..\Classes\RightCommand.cpp" />
+    <ClCompile Include="..\Classes\RightCommandInfo.cpp" />
+    <ClCompile Include="..\Classes\SelectLevelScene.cpp" />
+    <ClCompile Include="..\Classes\SlidingDoor.cpp" />
+    <ClCompile Include="..\Classes\SlidingDoorModel.cpp" />
+    <ClCompile Include="..\Classes\SlidingDoorView.cpp" />
+    <ClCompile Include="..\Classes\StepButton.cpp" />
+    <ClCompile Include="..\Classes\StepButtonModel.cpp" />
+    <ClCompile Include="..\Classes\StepButtonView.cpp" />
+    <ClCompile Include="..\Classes\TerminatingDoor.cpp" />
+    <ClCompile Include="..\Classes\TerminatingDoorModel.cpp" />
+    <ClCompile Include="..\Classes\TerminatingDoorView.cpp" />
+    <ClCompile Include="..\Classes\Utils.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Character.h" />
+    <ClInclude Include="..\Classes\CharacterModel.h" />
+    <ClInclude Include="..\Classes\CharacterStates.h" />
+    <ClInclude Include="..\Classes\CharacterView.h" />
+    <ClInclude Include="..\Classes\CollisionHandler.h" />
+    <ClInclude Include="..\Classes\Command.h" />
+    <ClInclude Include="..\Classes\CommandInfo.h" />
+    <ClInclude Include="..\Classes\DelayInfo.h" />
+    <ClInclude Include="..\Classes\Events.h" />
+    <ClInclude Include="..\Classes\Floor.h" />
+    <ClInclude Include="..\Classes\FloorModel.h" />
+    <ClInclude Include="..\Classes\FloorView.h" />
+    <ClInclude Include="..\Classes\GameElement.h" />
+    <ClInclude Include="..\Classes\GameElementModel.h" />
+    <ClInclude Include="..\Classes\GameElementView.h" />
+    <ClInclude Include="..\Classes\GameLayer.h" />
+    <ClInclude Include="..\Classes\GameOverScene.h" />
+    <ClInclude Include="..\Classes\GameScene.h" />
+    <ClInclude Include="..\Classes\GLES-Render.h" />
+    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\HUDLayer.h" />
+    <ClInclude Include="..\Classes\InfoScene.h" />
+    <ClInclude Include="..\Classes\InSpacePortal.h" />
+    <ClInclude Include="..\Classes\InSpacePortalModel.h" />
+    <ClInclude Include="..\Classes\InSpacePortalView.h" />
+    <ClInclude Include="..\Classes\InteractCommand.h" />
+    <ClInclude Include="..\Classes\InteractCommandInfo.h" />
+    <ClInclude Include="..\Classes\JumpCommand.h" />
+    <ClInclude Include="..\Classes\JumpCommandInfo.h" />
+    <ClInclude Include="..\Classes\LeftCommand.h" />
+    <ClInclude Include="..\Classes\LeftCommandInfo.h" />
+    <ClInclude Include="..\Classes\LevelDef.h" />
+    <ClInclude Include="..\Classes\LevelManager.h" />
+    <ClInclude Include="..\Classes\LevelParser.h" />
+    <ClInclude Include="..\Classes\Lift.h" />
+    <ClInclude Include="..\Classes\LiftModel.h" />
+    <ClInclude Include="..\Classes\LiftView.h" />
+    <ClInclude Include="..\Classes\MainMenuScene.h" />
+    <ClInclude Include="..\Classes\MovingPlatform.h" />
+    <ClInclude Include="..\Classes\MovingPlatformModel.h" />
+    <ClInclude Include="..\Classes\MovingPlatformView.h" />
+    <ClInclude Include="..\Classes\OutSpacePortal.h" />
+    <ClInclude Include="..\Classes\OutSpacePortalModel.h" />
+    <ClInclude Include="..\Classes\OutSpacePortalView.h" />
+    <ClInclude Include="..\Classes\PushableBlock.h" />
+    <ClInclude Include="..\Classes\PushableBlockModel.h" />
+    <ClInclude Include="..\Classes\PushableBlockView.h" />
+    <ClInclude Include="..\Classes\PushButton.h" />
+    <ClInclude Include="..\Classes\PushButtonModel.h" />
+    <ClInclude Include="..\Classes\PushButtonStates.h" />
+    <ClInclude Include="..\Classes\PushButtonView.h" />
+    <ClInclude Include="..\Classes\RecordTime.h" />
+    <ClInclude Include="..\Classes\RightCommand.h" />
+    <ClInclude Include="..\Classes\RightCommandInfo.h" />
+    <ClInclude Include="..\Classes\SelectLevelScene.h" />
+    <ClInclude Include="..\Classes\SlidingDoor.h" />
+    <ClInclude Include="..\Classes\SlidingDoorModel.h" />
+    <ClInclude Include="..\Classes\SlidingDoorView.h" />
+    <ClInclude Include="..\Classes\StepButton.h" />
+    <ClInclude Include="..\Classes\StepButtonModel.h" />
+    <ClInclude Include="..\Classes\StepButtonStates.h" />
+    <ClInclude Include="..\Classes\StepButtonView.h" />
+    <ClInclude Include="..\Classes\TerminatingDoor.h" />
+    <ClInclude Include="..\Classes\TerminatingDoorModel.h" />
+    <ClInclude Include="..\Classes\TerminatingDoorView.h" />
+    <ClInclude Include="..\Classes\Utils.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2d\cocos\2d\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\cocos\editor-support\spine\proj.win32\libSpine.vcxproj">
+      <Project>{b7c2a162-dec9-4418-972e-240ab3cbfcae}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cocos2d\external\Box2D\proj.win32\libbox2d.vcxproj">
+      <Project>{929480e7-23c0-4df6-8456-096d71547116}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\CSB\.DS_Store" />
+    <None Include="..\Resources\CSB\GameOverLayer.csb" />
+    <None Include="..\Resources\CSB\HUDLayer.csb" />
+    <None Include="..\Resources\CSB\InfoLayer.csb" />
+    <None Include="..\Resources\CSB\MainMenuLayer.csb" />
+    <None Include="..\Resources\CSB\SelectLevelLayer.csb" />
+    <None Include="..\Resources\images\.DS_Store" />
+    <None Include="..\Resources\images\info_layer_tilemap.tmx" />
+    <None Include="..\Resources\images\main_menu_tilemap.tmx" />
+    <None Include="..\Resources\images\princess_animation.plist" />
+    <None Include="..\Resources\Levels\1\Background.csb" />
+    <None Include="..\Resources\Levels\1\floor.tmx" />
+    <None Include="..\Resources\Levels\1\LevelConfig.json" />
+    <None Include="..\Resources\Levels\2\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\images\box.png" />
+    <Image Include="..\Resources\images\door_open.png" />
+    <Image Include="..\Resources\images\go_btnLevel.png" />
+    <Image Include="..\Resources\images\go_btnLevel_pressed.png" />
+    <Image Include="..\Resources\images\go_btnMainMenu.png" />
+    <Image Include="..\Resources\images\go_btnMainMenu_pressed.png" />
+    <Image Include="..\Resources\images\go_GameOver.png" />
+    <Image Include="..\Resources\images\hud_btnInteract.png" />
+    <Image Include="..\Resources\images\hud_btnInteract_pressed.png" />
+    <Image Include="..\Resources\images\hud_btnJump.png" />
+    <Image Include="..\Resources\images\hud_btnJump_pressed.png" />
+    <Image Include="..\Resources\images\hud_btnLeft.png" />
+    <Image Include="..\Resources\images\hud_btnLeft_pressed.png" />
+    <Image Include="..\Resources\images\hud_btnRight.png" />
+    <Image Include="..\Resources\images\hud_btnRight_pressed.png" />
+    <Image Include="..\Resources\images\hud_DirBG.png" />
+    <Image Include="..\Resources\images\in_portal.png" />
+    <Image Include="..\Resources\images\i_btnBack.png" />
+    <Image Include="..\Resources\images\i_btnBack_pressed.png" />
+    <Image Include="..\Resources\images\lift.png" />
+    <Image Include="..\Resources\images\ls_SelectLevel.png" />
+    <Image Include="..\Resources\images\mm_btnInfo.png" />
+    <Image Include="..\Resources\images\mm_btnInfo_pressed.png" />
+    <Image Include="..\Resources\images\mm_btnStart.png" />
+    <Image Include="..\Resources\images\mm_btnStart_pressed.png" />
+    <Image Include="..\Resources\images\mm_TimeTaleLogo.png" />
+    <Image Include="..\Resources\images\out_portal.png" />
+    <Image Include="..\Resources\images\princess_animation.png" />
+    <Image Include="..\Resources\images\push_button_off.png" />
+    <Image Include="..\Resources\images\push_button_on.png" />
+    <Image Include="..\Resources\images\sliding_door.png" />
+    <Image Include="..\Resources\images\step_button_off.png" />
+    <Image Include="..\Resources\images\step_button_on.png" />
+    <Image Include="..\Resources\images\TimeloopLogo.png" />
+    <Image Include="..\Resources\images\timetale_tilemap_64.png" />
+    <Image Include="..\Resources\Levels\1\timetale_tilemap_64.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
